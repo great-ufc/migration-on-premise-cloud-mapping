@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-window {
+  border: 1px solid #333;
+  width: 80%;
+  height: 70%;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #1e1e1e;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}
+
+.chat-window::-webkit-scrollbar {
+  width: 12px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 20px;
+  border: 3px solid #1e1e1e;
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chat-message.user {
+  background-color: #1e88e5; /* Azul claro */
+  align-self: flex-end;
+}
+
+.chat-message.ai {
+  background-color: #333;
+  align-self: flex-start;
+}
+
+.sender {
+  font-size: 0.8rem;
+  color: #bbbbbb;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  font-size: 1rem;
+}
+
+.sources {
+  margin-top: 5px;
+}
+
+.sources-header {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-bottom: 5px;
+}
+
+.source-tag {
+  display: inline-block;
+  background-color: #555;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-top: 2px;
+  font-size: 0.8rem;
+}
+
+.error-message {
+  color: #ff4d4d;
+  margin-top: 10px;
+}
+
+.chat-input-container {
+  display: flex;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.chat-input-container button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-input-container button:hover {
+  background-color: #0056b3;
+}
+
+.chat-input-container button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}

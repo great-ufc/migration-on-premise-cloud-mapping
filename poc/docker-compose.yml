@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - 8000:8000
+      - 5678:5678
+    restart: always
+    depends_on: 
+      - llm
+    networks:
+      - poc_network
+
+  app:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - 3000:3000
+    restart: always
+    depends_on: 
+      - api
+    networks:
+      - poc_network
+
+  llm:
+    image: ollama/ollama:latest
+    ports:
+      - 11434:11434
+    volumes:
+      - ./ollama/ollama:/root/.ollama
+    container_name: ollama
+    pull_policy: always
+    tty: true
+    restart: always
+    environment:
+      # - OLLAMA_KEEP_ALIVE=24h
+      - OLLAMA_HOST=0.0.0.0
+    networks:
+      - poc_network
+  
+networks:
+  poc_network:
+    external: false
