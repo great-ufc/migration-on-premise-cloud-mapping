@@ -27,17 +27,16 @@ services:
       - poc_network
 
   llm:
-    image: ollama/ollama:latest
+    build:
+      context: ./llm
     ports:
       - 11434:11434
     volumes:
       - ./ollama/ollama:/root/.ollama
     container_name: ollama
-    pull_policy: always
     tty: true
     restart: always
     environment:
-      # - OLLAMA_KEEP_ALIVE=24h
       - OLLAMA_HOST=0.0.0.0
     networks:
       - poc_network

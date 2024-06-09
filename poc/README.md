@@ -25,7 +25,10 @@ And You'll need ``docker`` started to run the following command :
 ```
 docker compose -f docker-compose-gpu.yml up
 ```
-### Prepare LLM models
+### Prepare LLM models (⚠️ important for users with poor internet)
+> If your internet isn't very fast, then you'll need to download the templates separately. 
+> First, comment out line 9 ``ENTRYPOINT [“./llm_setup.sh”]`` from the llm/Dockerfile. 
+> Then run inside the containers :
 
 You'll nedd run the folliwing commands in llm container:
 ```
