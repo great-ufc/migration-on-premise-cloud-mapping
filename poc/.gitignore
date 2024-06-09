@@ -8,6 +8,7 @@ data/*.txt
 __pycache__
 
 ollama/
+chroma
 chroma.rar
 
 # Logs
