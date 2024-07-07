@@ -18,7 +18,7 @@
   <img src="https://raw.githubusercontent.com/great-ufc/migration-on-premise-cloud-mapping/main/poc/media/Make-a-question.gif" title="Guide 1" height="500" width="850" />
 </p>
 
-### Api docs usage example vide
+### Api docs usage example video
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/great-ufc/migration-on-premise-cloud-mapping/main/poc/media/API-Make-a-question.gif" title="Guide 1" height="500" width="850" />
