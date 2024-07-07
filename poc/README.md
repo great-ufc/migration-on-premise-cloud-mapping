@@ -1,4 +1,22 @@
-## Get Started
+## Tutorial
+
+### Elements
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/great-ufc/migration-on-premise-cloud-mapping/main/poc/media/guide%20screen%201.png" title="Guide 1" height="500" width="850" />
+</p>
+
+### Chatting
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/great-ufc/migration-on-premise-cloud-mapping/main/poc/media/guide%20screen%203.png" title="Guide 1" height="500" width="850" />
+</p>
+
+### Usage Example Video
+
+![Usage example video](https://raw.githubusercontent.com/great-ufc/migration-on-premise-cloud-mapping/main/poc/media/Make%20a%20question.mp4)
+
+## Get Started to use
 
 ### Prepare enviroment variables
 
